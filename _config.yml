@@ -1,103 +1,76 @@
-######
-avatar: /images/avatar.webp
-favicon: /images/favicon.ico
-excerpt_length: 300 #自动生成的摘要长度 建议文章中手动使用 <!--more--> 效果更佳 
-grey_mode: false
-since: 2015
+# title: Your Site Title
+# description: The description of your site.
+# email: your-email@address.com
 
-#####侧边栏#####
-# 菜单
-menu:
-  archives: /archives/ || archive
-  about: /about/ || account_circle
-  我的博客: https://garybear.cn/ || rss_feed
-  说明文档: https://garybear.cn/hexo-theme-insulin/doc/#/ || insert_drive_file
+# author: Your name #  Default is your site title.
 
-# 社交链接
-social:
-  E-Mail: mailto:kb1000fx@gmail.com || fas fa-envelope
-  GitHub: https://github.com/kb1000fx || fab fa-github
-  Steam: https://steamcommunity.com/profiles/76561198346798163 || fab fa-steam
-  Weibo: https://weibo.com/kb1000fx || fab fa-weibo
+# # Your social accounts.
+# social:
+#   github: github_username
+#   twitter: twitter_username
+#   facebook: facebook_username
+#   instagram: instagram_username
+#   linkedin: linkedin_username
+#   weibo: weibo_username
 
+# # Theme Settings
 
-# Google Adsense广告代码
-google_adsense:
-  enabled: false
-  auto_ad: true
-  pub_id: 
-  footer_slot: 
-  banner_slot: 
+# # Your site's logo. Will be shown on the left top of your page.
+# logo: /img/logo.svg
+# # If the images of our blog are stored in an external cloud. You can use the jekyll-img-prefix plugin and set your images' base URL here.
+# img_prefix: https://your-img-cdn.com
+# # The RSS link of your blog.
+# rss: "/feed.xml"
 
-#####文章#####
-# 文末结束语
-passage_end_tag:
-  enabled: true
-  text: --- 本文结束 <i class="fas fa-heart"></i> The End ---
+# # The followings are settings for displays of your blog.
+# theme_setting:
+#   # The slides count in the slides layout. Default is 4.
+#   slides_count: 5
+#   # The ← back URL on the top of your post page. Default is your site's home page.
+#   blog_page: "blog/index.md"
+#   # The URL on your name on the bottom of your post and page. Default is your site's home page.
+#   about_page: "about.md"
+#   #  The URL of the menu icon(which has three black lines). Will be shown on the slides/book/chapter layouts It won't be shown if blank.
+#   archive_page: "archive.md"
+#   # The nav links on the top right of home/page/post/blog layout. You can set a local page(by setting a layout's path) or and external link ( both title and url are required) here.
+#   nav_pages:
+#     - "about.md"
+#     -
+#       title: "External Link Title"
+#       url: "https://your-external-link.com"
+#   # Every default value in the following settings is false. You can set them globally here or separately in a single post/page/chapter.
+#   code: true # Code highlight.
+#   math: true # Mathjax
+#   mermaid: true # Mermaid
+#   #  Locales of this theme.
+#   lang:
+#     category_all: All # The first tag in the categories bar on the blog layout page. By clicking it all of your posts will be shown. Default is 'All'.
+#     blog_title: Blog # The text of ← back url on the top of the post layout.  Default is 'Home'.
+#     # The locales of the comment controls.
+#     comment:
+#       user: "昵称"
+#       email: "邮箱"
+#       url: "链接"
+#       message: "说点什么吧..."
+#       reply: "回复"
 
-# 数学公式渲染
-math:
-  enabled: true
-  engine: mathjax ##可选渲染引擎：mathjax、katex
-  mathjax:
-    cdn: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-    mhchem: true
-  katex:
-    cdn_css: https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css
-    cdn_js: https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js
-    auto_render: https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js
+# head_code: |
+#   <!-- Extra codes in the head of your site pages. You can add your Google Analysis codes here! -->
 
-# mermaid 
-mermaid:
-  enable: true 
-  version: "8.4.8" 
-  startOnload: true  #default true
-  theme: 'default'    #default, forest, dark, neutral.
-##########
-
-
-# 不蒜子计数
-busuanzi:
-  site: true
-  page: true
-  busuanzi_js: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
-##########
-
-#####第三方服务#####
-# 评论
-comment:
-  use: false #false或Array形式
-  ## Gitalk
-  gitalk_client_id: 
-  gitalk_client_secret: 
-  gitalk_repo: 
-  gitalk_owner: 
-  gitalk_sid_type:
-  gitalk_distractionFreeMode: true
-  ## Disqus
-  disqus_shortname:
-  ## Livere
-  livere_data_uid: 
-  ## Valine
-  valine_leancloud_app_id:
-  valine_leancloud_app_key:
-  valine_option:  #valine_option为Object形式，详见https://valine.js.org/configuration.html
-  ## 畅言
-  changyan_app_id:
-  changyan_app_key:
-  changyan_sid_type:
-
-# 分析
-analytics:
-  google_analytics:
-    tracking_id: 
-    localhost_ignored: true
-  baidu_site_id:
-  cnzz_site_id:
-  tencent_site_id:
-##########
-
-search:
-  local: false
-  path: search.xml
-  placeholder: 请输入关键字
+# # The settings of comments.
+# comment:
+#   # You should set it to enable comment
+#   enabled: true
+#   # Your comment provider
+#   provider: disqus # static/disqus
+#   # If provider == disqus
+#   disqus:
+#     name: website_name
+#   # Or provider == static
+#   static:
+#     # Your static comment url.
+#     postUrl:  https://api.staticman.net/v2/connect/GITHUB-USERNAME/GITHUB-REPOSITORY
+# # The settings of local smileys used in static comments. The jekyll-smiley plugin is required.
+# smiley:
+#   enabled: true
+#   dir: img/smileys
