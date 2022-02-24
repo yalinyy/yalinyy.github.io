@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: stun
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -105,3 +105,8 @@ deploy:
   type: 'git'
   repo: https://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@github.com/yalinyy/yalinyy.github.io.git
   branch: master
+
+
+# 是否开启访问量统计功能(不蒜子)
+busuanzi:
+ enable: true
